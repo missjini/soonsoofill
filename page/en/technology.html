@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/technology.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"> 
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/review.js"></script>
+    <script src="../../js/motion.js"></script>
+    <title>Technology</title>
+</head>
+<body>
+    <script>
+        /* 테크놀러지 메뉴 클릭시 실행 */
+        function technologyMove(tab) {
+            if(location.pathname != '/soonsoofill/page/en/technology.html') {
+                location.href = '/soonsoofill/page/en/technology.html?tab='+tab;
+            } else {
+                if($("#"+tab).length == 0) {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 500);
+                } else {
+                    $("html, body").animate({
+                        scrollTop: $("#"+tab).offset().top - 70
+                    }, 500);
+                }
+            }
+        }
+    </script>
+        
+    <div id="wrap">
+        <div class="gnb_btn_bg">
+                    
+        </div>
+        <header id="header_sub">
+            <div class="head_inner">
+                <h1>
+                    <a href="../../en/index.html">
+                        <img class="main_logo_en" src="../../images/logo_en.png" alt="Logo" />
+                    </a>
+                </h1>  
+                <div class="gnb_btn">
+                    <img onclick="sideBar.open()" src="../../images/gnb.png" alt="Open" />
+                </div>
+            </div>
+        </header>
+        <aside class="side_bar js-side_bar">
+            <div class="lang">
+                <ul class="lang_list">
+                    <li>
+                        <a href="../../index.html">KOR</a>
+                    </li>
+                    <li>
+                        <a href="../../en/index.html">ENG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_btn_close">
+                <img onclick="sideBar.close()" src="../../images/close.png" alt="Close" />
+            </div>
+
+            <div class="m_menu_wrap">
+                <ul class="m_menu_list">
+                    <li class="">
+                        <div class="m_list_title">
+                            BRAND
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/brand.html">Brand Story</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PROCESS
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/process.html">Standards and Spirit</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/process2.html">The 9 Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            TECHNOLOGY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="javascript:technologyMove('zeep');void(0);">Exquisite Technology</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('downing');void(0);">Exquisite Molding</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('result');void(0);">Clinical Results</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PRODUCT
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/product1.html">SOON SOO FILL 50</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product2.html">SOON SOO FILL 100</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product3.html">SOON SOO FILL 300</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product4.html">SOON SOO FILL 500</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            INFORMATION
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/information1.html">Basic Information</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/information2.html">Side Effect</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/information3.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            COMMUNITY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/community1.html">Notice</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/community2.html">Q&A</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>               
+        </aside>
+
+        <section id="container">
+            <div id="sub_spot_en">
+                <div class="inner">
+                    <div class="outer">
+                        TECHNOLOGY
+                    </div>
+                </div>
+            </div>            
+            <div id="technology">
+                <div class="area">
+                    <h2>
+                        JETEMA continuously researches to maximize <strong>safety improvement.</strong>
+                    </h2>
+                    <div class="tab">
+                        <ul>
+                            <li id="tab_zeep">Exquisite Technology</li>
+                            <li id="tab_downing">Exquisite Molding</li>
+                            <li id="tab_result">Clinical Results</li>
+                        </ul>
+                    </div>
+                    <!-- S : ZEEP 테크놀로지 -->
+            
+                    <div id="zeep"></div>
+            
+                    <h3>
+                        Exquisite Technology
+                    </h3>
+            
+                    <div class="text_thum01">
+                        <div class="subject">
+                            ZEEP Technology
+                        </div>
+                        <div class="p_info">
+                            ZEEP Technology (Zero Endotoxin & BDDE Entire Process)<br />
+                            SOON SOO FILL keeps endotoxin below 0.1 EU/ml and no detection of residual BDDE minimizing various side<br />
+                            effects that may occur after the procedure.
+                        </div>
+                    </div> 
+                
+                    <div class="thum">
+                        <img alt="CERTIFICATE OF ANALYSIS" src="../../images/technology/zeep_thum1.png">
+                    </div>
+            
+                    <div class="ref">
+                        <div class="thum_text">
+                            <ul>
+                                <li>Endotoxin ▼</li>
+                                <li>Inflammation ▼ &nbsp;/</li>
+                                <li>BDDE ▼</li>
+                                <li>Allergic reaction ▼</li>
+                            </ul>
+                        </div>
+                        Ref. COA Certificate of Analysis
+                    </div>
+                    <!-- E: ZEEP 테크놀로지 -->
+                
+                    <!-- S : DOWNING -->
+                    <div class="text_thum01" style="margin-top:80px;">
+                        <div class="subject">
+                            Downing Process
+                        </div>
+                    
+                        <div class="p_info">
+                            SOON SOO FILL produces a uniform particle size through its own Downing Process.<br>
+                            Exquisite procedures are possible without agglomeration.
+                        </div>
+                    </div>
+               
+                
+                    <div class="new_area">
+                        
+                        <div class="new_area_head">
+                            <div class="head_thum">
+                                <img src="../../images/technology/new_fix_thum.jpg" alt="">
+                            </div>
+                            <div class="head_info">
+                                In comparison with competitors, the particle size of e.p.t.q. filler is observed to be tiny and homogenized.
+                            </div>
+                        </div>
+                        
+                        <div class="new_area_bottom">
+                            <ul>
+                                <li>
+                                    <div class="bottom_thum">
+                                        <img src="../../images/technology/downing_thum2.png" alt="">
+                                    </div>
+                                    <div class="bottom_info">
+                                        e.p.t.q. S500
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottom_thum">
+                                        <img src="../../images/technology/downing_thum3.png" alt="">
+                                    </div>
+                                    <div class="bottom_info">
+                                        M Company / N Product
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottom_thum">
+                                        <img src="../../images/technology/downing_thum4.png" alt="">
+                                    </div>
+                                    <div class="bottom_info">
+                                        A Company / J Product
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bottom_thum">
+                                        <img src="../../images/technology/downing_thum5.png" alt="">
+                                    </div>
+                                    <div class="bottom_info">
+                                        L Company / Y Product
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <p>
+                            Gel morphology : particle of soon soo fill seems like dot on Shuttle Pix (P-400R Digital Microscope).
+                        </p>
+                        
+                    </div>
+                
+                    <div class="thum">
+                        <img alt="압출력시험결과" src="../../images/technology/downing_thum1.png">
+                    </div>
+                    
+                    <div class="ref">
+                        Ref. Data on file
+                    </div>
+                    <!-- E : DOWNING -->
+                        
+                    <div id="downing"></div>
+                        
+                    <h3 class="v1">Exquisite Molding</h3>
+                    
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Minimized BDDE Input
+                        </div>
+                    
+                        <div class="p_info">
+                            MoD(Degree of Modification) is a safety verification requirement.<br />
+                            'MoD = full cross-linked BDDE + Pendant type BDDE' by checking the modification ratio of HA through<br />
+                            measurement of total amount of BDDE present in HA Gel. <br />
+                            MoD of e.p.t.q. is 1/6 lower than compare with other mono type filler, making it safer.
+                        </div>
+                    </div>
+            
+                    <div class="thum">
+                        <img alt="" src="../../images/technology/new_fix_thum1_en.jpg">
+                    </div>
+                    
+                    <div class="option_text">
+                        Ref. Data from JETEMA Laboratory, 2018-2019
+                    </div>
+                    
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Maximization of Cross-linking Efficiency
+                        </div>
+                    
+                        <div class="p_info">
+                            SOON SOO FILL through the improved physical cross-link process to achieve a complete cross-linking level<br />
+                            while minimizing the amount of BDDE as a chemical catalyst material, thereby manufacturing a gel with high<br />
+                            viscoelastic properties.
+                        </div>
+                    </div>
+            
+                    <div class="thum">
+                        <img alt="" src="../../images/technology/new_fix_thum2_en.jpg">
+                    </div>
+            
+            
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Hight Viscoelasticity and Cohesiveness
+                        </div>
+                    
+                        <div class="p_info">
+                            Compared with e.p.t.q. S 500 and representative filler products, e.p.t.q.'s complex viscosity and<br />
+                            cohesiveness is equivalent to foreign A products which has more BDDE input and more outstanding<br />
+                            compare with domestic B products, can make best clinical results.
+                        </div>
+                    </div>
+                
+                    <!-- S : 임상결과 -->
+                    
+                    <div id="result">
+
+                    </div>
+                    
+                    <h3 class="v1">
+                        Clinical Results
+                    </h3>
+                    
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Efficacy Assessment
+                        </div>
+                    
+                        <div class="p_info">
+                            From the WSRS results (reduced compared to the baseline scores) evaluated by independent expert<br />
+                            panels and blinded investigators, we are able to see the wrinkle improvement of the group.
+                        </div>
+                    </div>
+                    
+                    <div class="thum">
+                        <img alt="시험자에 의해 평가된 베이스라인 대비 8주, 16주, 24주에서의 WSRS 평균값 변화" src="../../images/technology/result_thum1_en.png">
+                    </div>
+                    
+                    <div class="option_text">
+                        WSRS mean value change at 8, 16 and 24 weeks compared to baseline assessed by blinded investigators.
+                    </div>
+                    
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Participant Self-Satisfaction Assessment
+                        </div>
+                    
+                        <div class="p_info">
+                            Although there was no statistically significant difference in evaluating the satisfaction of the treatment<br />
+                            with the tester and the subject's GAIS(Global Aesthetic Improvement Scale), the satisfaction level of the<br />
+                            test group was similar or slightly higher than that of the control group.
+                        </div>
+                    </div>
+                    
+                    <div class="thum">
+                        <img alt="피보험자에 의해 평가된 8주, 16주, 24주에서의 GAIS 평균값" src="../../images/technology/result_thum2_en.png">
+                    </div>
+                    
+                    <div class="option_text">
+                        Figure 2. GAIS mean values at 8, 16 and 24 weeks evaluated by subjects
+                    </div>
+                    
+                    <div class="text_thum01">
+                        <div class="subject">
+                            Safety Assessment
+                        </div>
+                    
+                        <div class="p_info">
+                            No major abnormalities were reported, and slight abnormal responses from medical devices, such as<br />
+                            slight swelling and pain for 2-3 days, were all recovered without any special treatment. There were no<br />
+                            signs of abnormal vital signs, physical examinations, or blood tests. e.p.t.q. has been reported to be a<br />
+                            safe medical device due to its proven safety in the body.
+                        </div>
+                    </div>
+                    
+                    <div class="ref v1">
+                        Ref. Clinical Study Result, Department of Dermatology, Chung-Ang University Hospital, Korea 2016
+                    </div>
+                    <!-- E : 임상결과 -->
+                </div>
+            </div>
+        </section>         
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img onclick="window.open('https://www.jetema.com/')" src="../../images/logo_jetema.png" alt="제테마" />
+                </div>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <strong>JETEMA, Co., Ltd.</strong>
+                        </li>
+                        <li>
+                            President <strong>Kim Jaeyoung</strong>
+                        </li>
+                        <li>
+                            Address <strong>1283-4, Gagok-ri, Jijeong-myeon, Wonju-si, Gangwon-do, Republic of Korea</strong>
+                        </li>                        
+                        <li>
+                            Corporate Registration Number <strong>135-86-03665</strong>
+                        </li>
+                        <li>
+                            E-mail <strong>global@jetema.com</strong>
+                        </li>
+                        <li>
+                            Tel <strong>+82-2-572-1331</strong>
+                        </li>
+                        <li>
+                            Fax <strong>+82-2-572-1060</strong>
+                        </li>
+                        <li>
+                            COPYRIGHTⓒ 2017 JETEMA Corp. ALL RIGHTS RESERVED.
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_menu">
+                    <div class="inquiry">
+                        <ul>
+                            <li class="btn-open-modal">
+                                <strong id="modalOpenButton">Privacy Policy</strong>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <strong><a href="../../page/community.html" target="_blank">Community</a></strong>
+                            </li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>   
+        </footer>
+    </div>
+
+    <div id="floating">
+        <ul>
+            <li onclick="window.open('https://welcometojam.com')">
+                <img src="../../images/floating_icon1.png" alt="JAM" style="cursor:pointer; width:60px">
+            </li>
+            <li>
+                <img src="../../images/floating_icon2.png" alt="SNS" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.youtube.com/channel/UCRutyS9CTVKATZ2XEwKgYLQ/featured?app=desktop')" src="../../images/floating_youtube.png" alt="JETEMA Youtube" title="JETEMA Youtube">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.instagram.com/jetema_official/')" src="../../images/floating_insta.png" alt="JETEMA Instagram" title="JETEMA Instagram">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            {$("#floating > ul > li").mouseenter(function() {
+                $(".floating_sub").fadeOut(300);
+                $(this).find(".floating_sub").stop().fadeIn(300);
+            });
+            $("#floating").mouseleave(function() {
+                $(".floating_sub").stop().fadeOut(300);
+            });
+            }
+        });
+    </script>
+
+    <!-- sidebar start -->
+    <script>
+        const sideBar = new SideBar('.js-side_bar', 'right');
+    </script>
+    <!-- sidebar end -->    
+
+    <!-- modal start -->
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <div class="Content_text">
+                <strong>1. 수집하는 개인정보의 항목</strong><br>
+                순수필 홈페이지는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                수집항목 : 성명, 비밀번호, 이메일, 휴대전화번호<br>
+                개인정보 수집방법 : 홈페이지(문의사항)<br><br>
+
+
+                <strong>2. 개인정보의 수집 및 이용목적</strong><br>
+                순수필 홈페이지는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+                불만처리 등 민원처리 , 고지사항 전달 마케팅 및 광고에 활용 신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달<br><br>
+
+
+                <strong>3. 개인정보의 보유 및 이용기간</strong><br>
+                순수필 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br>
+            </div>            
+            <div id="modalCloseButton">
+                <img src="../../images/btn_close.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalOpenButton = document.getElementById('modalOpenButton');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modal = document.getElementById('modalContainer');
+
+        modalOpenButton.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        });
+    </script>
+    <!-- modal end -->
+
+    <script>
+        $(document).ready(function () {
+            $(".m_list_title").click(function () {
+                if ($(this).hasClass("active")) {
+                    slideUp();
+                } else {
+                    slideUp();
+                    $(this).addClass("active").next().slideDown();
+                }
+                    function slideUp() {
+                    $(".m_list_title").removeClass("active").next().slideUp();
+                }
+            });
+        });  
+    </script>
+
+    <script>
+        $("#tab_zeep").click(function(){
+            $("html, body").animate({
+                scrollTop: $("#zeep").offset().top - 70
+            }, 500);
+        });
+        $("#tab_downing").click(function(){
+            $("html, body").animate({
+                scrollTop: $("#downing").offset().top - 70
+            }, 500);
+        });
+        $("#tab_result").click(function(){
+            $("html, body").animate({
+                scrollTop: $("#result").offset().top - 70
+            }, 500);
+        });
+
+        var getParam = function(key) {
+            var _parammap = {};
+            document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+                function decode(s) {
+                    return decodeURIComponent(s.split("+").join(" "));
+                }
+
+                _parammap[decode(arguments[1])] = decode(arguments[2]);
+            });
+
+            return _parammap[key];
+        };
+
+        var tab = getParam("tab");
+        if(tab != null) { technologyMove(tab); }
+    </script>
+</body>
+</html>

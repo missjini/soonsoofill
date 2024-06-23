@@ -1,0 +1,352 @@
+body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header start */
+#header_sub {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid #dddddd;
+    z-index: 99;
+}
+
+#header_sub > .head_inner .gnb_btn img {
+    width: 40px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+#header_sub > .head_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 33px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    transition: 2s;
+    justify-content: space-between;
+}
+/* header End */
+
+#container .inner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#container .inner .outer {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-family: 'NanumSquare', sans-serif;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* section background start */
+#container #sub_spot {
+    position: relative;
+    background: url(../images/brand/brand-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 94px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #sub_spot_en {
+    position: relative;
+    background: url(../images/brand/brand-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 87px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section background end */
+
+#brand {
+    margin-top: 120px;
+    padding-bottom: 320px;
+    background: url(../images/brand/brand.png) no-repeat right bottom;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+.area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;  
+}
+
+#brand > .area .motion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#brand > .area .motion .motion1 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+#brand > .area .motion .motion2 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+#brand > .area .motion .motion1 .scene1 img {
+    width: 186px;
+}
+
+#brand > .area .motion .motion2 .scene2 img {
+    width: 196px;
+}
+
+#brand > .area .motion .motion2 .scene2 {
+    margin-top: 35px;
+}
+
+#brand > .area .motion .motion1 .scene2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#brand > .area p {
+    position: relative;
+    width: 100%;
+    margin: 50px 0 0 0;
+    color: #333333;
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#brand > .area p.v1 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    border: none;
+    color: #666666;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#brand > .area p span {
+    color: #eb9969;
+}
+
+@media all and (max-width:1600px) {
+    #header_sub > .head_inner {
+        padding: 33px 50px;
+    }
+}
+
+@media all and (max-width:1280px) {
+    #brand {
+        margin-top: 90px;
+        padding-bottom: 380px;
+    }
+
+    #brand > .area {
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #brand > .area p.v1 {
+        font-size: 22px;
+    }
+
+    #brand > .area p {
+        font-size: 26px;
+        margin: 40px 0 0 0;
+    }
+
+    #brand > .area .motion .motion1 .scene1 img {
+        width: 146px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 img {
+        width: 156px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 {
+        margin-top: 25px;
+    }
+
+    #brand > .area p {
+        font-size: 26px;
+        line-height: 45px;
+    }
+
+    #brand > .area p.v1 {
+        font-size: 22px;
+        margin: 10px 0 0 0;
+        line-height: 45px;
+    }
+}
+
+@media all and (max-width:1091px) {
+    #brand > .area {
+        width: auto;
+    }
+}
+
+@media all and (max-width:960px) {
+    #header_sub > .head_inner .gnb_btn img {
+        width: 36px;
+    }
+
+    #container #sub_spot {
+        margin-top: 91px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 85px;
+    }
+}
+
+@media all and (max-width:767px) {
+    #brand {
+        margin-top: 70px;
+    }
+
+    #brand > .area p {
+        margin: 30px 0 0 0;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    #brand > .area p.v1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #container .inner .outer {
+        font-size: 30px;
+    }
+
+    #container #sub_spot {
+        height: 200px;
+    }
+
+    #brand > .area .motion .motion1 .scene1 img {
+        width: 126px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 img {
+        width: 136px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 {
+        margin-top: 30px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 85px;
+        height: 200px;
+    }
+}
+
+@media all and (max-width:640px) {
+    #brand > .area p {
+        margin: 25px 0 0 0;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #brand > .area p.v1 {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #brand {
+        margin-top: 50px;
+        padding-bottom: 320px;
+        background-size: 100%;
+    }
+
+    #container #sub_spot {
+        margin-top: 72px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 68px;
+    }
+
+    #header_sub > .head_inner .main_logo {
+        width: 71px;
+    }
+
+    #header_sub > .head_inner {
+        padding: 25px 25px;
+    }
+
+    #header_sub > .head_inner .gnb_btn img {
+        width: 30px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #brand > .area .motion .motion1 .scene1 img {
+        width: 106px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 img {
+        width: 116px;
+    }
+
+    #brand > .area .motion .motion2 .scene2 {
+        margin-top: 20px;
+    }
+
+    #brand > .area {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media all and (max-width:480px) {
+    #brand {
+        padding-bottom: 260px;
+    }
+}

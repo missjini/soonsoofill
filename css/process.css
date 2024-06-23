@@ -1,0 +1,282 @@
+body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header start */
+#header_sub {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid #dddddd;
+    z-index: 99;
+}
+
+#header_sub > .head_inner .gnb_btn img {
+    width: 40px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+#header_sub > .head_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 33px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    transition: 2s;
+    justify-content: space-between;
+}
+/* header End */
+
+#container .inner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#container .inner .outer {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-family: 'NanumSquare', sans-serif;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* section background start */
+#container #sub_spot {
+    position: relative;
+    background: url(../images/process/process-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 94px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #sub_spot_en {
+    position: relative;
+    background: url(../images/process/process-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 87px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section background end */
+
+#process {
+    margin-top: 120px;
+    padding-bottom: 380px;
+    background: url(../images/process/process.jpg) no-repeat right bottom;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#process .area > h2 strong {
+    color: #eb9969;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+#process .area > h2 {
+    position: relative;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 400;
+    text-align: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+#process .area > p {
+    position: relative;
+    margin: 40px 0 0 0;
+    color: #666666;
+    font-size: 26px;
+    line-height: 48px;
+    font-weight: 400;
+    text-align: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > p.v1 {
+    margin: 60px 0 0 0;
+    color: #666666;
+    font-size: 26px;
+    line-height: 48px;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media all and (max-width:1600px) {
+    #header_sub > .head_inner {
+        padding: 33px 50px;
+    }
+}
+
+@media all and (max-width:1280px) {
+    #process .area > h2 {
+        font-size: 30px;
+    }
+
+    #process .area > h2 strong {
+        font-size: 30px;
+    }
+
+    #process .area > p {
+        font-size: 22px;
+        line-height: 45px;
+    }
+
+    #process .area > p.v1 {
+        font-size: 22px;
+        line-height: 45px;
+        margin: 40px 0 0 0;
+    }
+
+    #process {
+        margin-top: 90px;
+        padding-bottom: 400px;
+    }
+
+    #process .area {
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media all and (max-width:1091px) {
+    #process > .area {
+        width: auto;
+    }
+}
+
+@media all and (max-width:960px) {
+    #container #sub_spot_en {
+        margin-top: 85px;
+    }
+}
+
+@media all and (max-width:767px) {
+    #container .inner .outer {
+        font-size: 30px;
+    }
+
+    #container #sub_spot {
+        height: 200px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 85px;
+        height: 200px;
+    }
+
+    #process {
+        margin-top: 70px;
+    }
+
+    #process .area > h2 {
+        font-size: 24px;
+    }
+
+    #process .area > h2 strong {
+        font-size: 24px;
+    }
+
+    #process .area > p {
+        font-size: 18px;
+        line-height: 40px;
+        margin: 30px 0 0 0;
+    }
+
+    #process .area > p.v1 {
+        font-size: 18px;
+        line-height: 40px;
+        margin: 30px 0 0 0;
+    }
+}
+
+@media all and (max-width:640px) {
+    #process .area > h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #process .area > h2 strong {
+        font-size: 22px;
+    }
+
+    #process .area {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #process > .area p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #process > .area p.v1 {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    #process {
+        margin-top: 50px;
+        background-size: cover;
+        background-position: 50% top;
+        padding-bottom: 300px;
+    }
+
+    #container #sub_spot {
+        margin-top: 72px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 68px;
+    }
+
+    #header_sub > .head_inner .main_logo {
+        width: 71px;
+    }
+
+    #header_sub > .head_inner {
+        padding: 25px 25px;
+    }
+
+    #header_sub > .head_inner .gnb_btn img {
+        width: 30px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}

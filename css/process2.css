@@ -1,0 +1,318 @@
+body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header start */
+#header_sub {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid #dddddd;
+    z-index: 99;
+}
+
+#header_sub > .head_inner .gnb_btn img {
+    width: 40px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+#header_sub > .head_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 33px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    transition: 2s;
+    justify-content: space-between;
+}
+/* header End */
+
+#container .inner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#container .inner .outer {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-family: 'NanumSquare', sans-serif;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* section background start */
+#container #sub_spot {
+    position: relative;
+    background: url(../images/process/process-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 94px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #sub_spot_en {
+    position: relative;
+    background: url(../images/process/process-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 87px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section background end */
+
+#process {
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+
+#process .area {
+    margin: 0 auto;
+}
+
+#process .area > h2 {
+    margin: 100px auto 0;
+    color: #eb9969;
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > p {
+    position: relative;
+    margin: 30px 0 0 0;
+    color: #666666;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > p i {
+    display: block;
+}
+
+#process .area > .list {
+    width: 1100px;
+    margin: 70px auto 100px;
+}
+
+#process .area > .list ul {
+    margin: 0;
+    padding: 0;
+}
+
+#process .area > .list li {
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    width: 31.33333%;
+    margin: 0 1% 20px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > .list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#process .area > .list .thum {
+    width: 90px;
+    margin: 30px auto 0;
+    line-height: 0;
+}
+
+#process .area > .list h2 {
+    margin: 0;
+    color: #014db0;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > .list h2.v1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#process .area > .list p {
+    min-height: 85px;
+    margin: 0;
+    color: #666666;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#process .area > .list p.v1 {
+    min-height: 68px;
+    margin-top: 11px;
+}
+
+#process .area > .list p i {
+    display: block;
+}
+
+@media all and (max-width:1280px) {
+    #process .area > h2 {
+        font-size: 44px;
+    }
+
+    #process .area > p {
+        font-size: 22px;
+        line-height: 38px;
+    }
+}
+
+@media all and (max-width:1091px) {
+    #process .area > .list {
+        width: auto;
+    }
+}
+
+@media all and (max-width:960px) {
+    #container #sub_spot_en {
+        margin-top: 85px;
+    }
+}
+
+@media all and (max-width:767px) {
+    #container #sub_spot {
+        height: 200px;
+    }
+
+    #container .inner .outer {
+        font-size: 30px;
+    }
+
+    #process .area > .list li {
+        width: 46%;
+        margin: 0 2% 20px;
+    }
+
+    #process .area > h2 {
+        font-size: 40px;
+        margin: 90px auto 0;
+    }
+
+    #process .area > p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 85px;
+    }
+}
+
+@media all and (max-width:640px) {
+    #process .area > h2 {
+        margin: 50px auto 0;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    #process .area > p {
+        margin: 15px 20px 0 20px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #process .area > .list {
+        margin: 40px auto 100px;
+    }
+
+    #process .area > .list li {
+        float: none;
+        width: 90%;
+        margin: 0 5% 20px;
+    }
+
+    #process .area > .list h2 {
+        font-size: 20px;
+    }
+
+    #process .area > .list h2.v1 {
+        font-size: 20px;
+    }
+
+    #process .area > .list p {
+        min-height: 0px;
+        margin: 0 0 30px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #process .area > .list p.v1 {
+        min-height: 0px;
+    }
+
+    #container #sub_spot {
+        margin-top: 72px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 68px;
+    }
+
+    #header_sub > .head_inner .main_logo {
+        width: 71px;
+    }
+
+    #header_sub > .head_inner {
+        padding: 25px 25px;
+    }
+
+    #header_sub > .head_inner .gnb_btn img {
+        width: 30px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}

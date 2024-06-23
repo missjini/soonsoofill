@@ -1,0 +1,635 @@
+body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header start */
+#header_sub {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid #dddddd;
+    z-index: 99;
+}
+
+#header_sub > .head_inner .gnb_btn img {
+    width: 40px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+#header_sub > .head_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 33px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+    transition: 2s;
+    justify-content: space-between;
+}
+/* header End */
+
+#container .inner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#container .inner .outer {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-family: 'NanumSquare', sans-serif;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* section background start */
+#container #sub_spot {
+    position: relative;
+    background: url(../images/technology/technology-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 94px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #sub_spot_en {
+    position: relative;
+    background: url(../images/technology/technology-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 87px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section background end */
+
+/* TECHNOLOGY */
+#technology {
+    overflow: hidden;
+    width: 1160px;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > h2 {
+    position: relative;
+    margin: 100px auto 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #000000;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > h2 strong {
+    font-family: 'NanumSquare', sans-serif;
+    color: #ff4f11;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+}
+
+#technology .area > h2 i {
+    display: none;
+}
+
+#technology .area > .tab {
+    margin: 80px auto 0;
+}
+
+#technology .area > .tab ul {
+    margin: 0;
+    padding: 0;
+}
+
+#technology .area > .tab li {
+    list-style: none;
+    float: left;
+    width: 33.33333%;
+    font-family: 'NanumSquare', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    border-left: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #727272;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#technology .area > .tab li:hover {
+    background-color: #ff4f11;
+}
+
+
+#technology .area > .tab:after {
+    content: "";
+    display: block;
+    clear: both;
+    /* height:0; visibility:hidden; */
+}
+
+#technology .area > h3 {
+    margin: 50px auto 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #000000;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > h3.v1 {
+    margin: 70px auto 0;
+}
+
+#technology .area > p {
+    margin: 5px auto 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > .thum img {
+    margin: 0 auto;
+}
+
+#technology .area > .thum {
+    margin: 25px 0 0;
+    padding: 40px 0;
+    border: 2px solid #cccccc;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#technology .area > .ref {
+    position: relative;
+    margin: 10px 0 0 22px;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > .ref.v1 {
+    margin: 30px 0 100px 22px;
+}
+
+#technology .area > .ref .thum_text {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#technology .area > .ref .thum_text ul {
+    margin: 0;
+    padding: 0;
+}
+
+#technology .area > .ref .thum_text li {
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > .ref .thum_text:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#technology .area > .text_info {
+    margin: 40px 0 0 22px;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#technology .area > .text_info strong {
+    font-family: 'NanumSquare', sans-serif;
+    color: #014db0;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+}
+
+#technology .area > .text_thum {
+    margin: 20px 22px 0 22px;
+}
+
+#technology .area > .text_thum ul {
+    margin: 0;
+    padding: 0;
+}
+
+#technology .area > .text_thum li {
+    list-style: none;
+    float: left;
+    width: 24.25%;
+    margin: 0 0 0 1%;
+}
+
+#technology .area > .text_thum li:first-child {
+    margin-left: 0;
+}
+
+#technology .area > .text_thum .thum01 {
+    line-height: 0;
+}
+
+#technology .area > .text_thum .thum01 img {
+    width: 100%;
+}
+
+#technology .area > .text_thum .thum01_info {
+    font-family: 'NanumSquare', sans-serif;
+    color: #555555;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+#technology .area > .text_thum:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#technology .area > .text_thum01 {
+    margin: 30px 0 0 0;
+    font-size: 0;
+}
+
+#technology .area > .text_thum01 .subject {
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+    font-family: 'NanumSquare', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #014db0;
+}
+
+#technology .area > .text_thum01 .p_info {
+    display: inline-block;
+    vertical-align: top;
+    width: 71.2%;
+    margin-left: 2.8%;
+    margin-top: -5px;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+#technology .area > .text_thum01 .p_info i {
+    display: block;
+}
+
+#technology .area > .option_text {
+    margin: 15px 0 55px;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* 20190619 추가 */
+#technology .area > .new_area {
+    margin: 25px 0 0;
+    padding: 30px 0;
+    border: 2px solid #cccccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#technology .area > .new_area .new_area_head {
+    font-size: 0;
+}
+
+#technology .area > .new_area .new_area_head .head_thum {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    text-align: center;
+    line-height: 0;
+}
+
+#technology .area > .new_area .new_area_head .head_info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+    font-family: 'NanumSquare', sans-serif;
+    color: #014db0;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+#technology .area > .new_area .new_area_bottom {
+    margin: 20px 1.4% 0;
+}
+
+#technology .area > .new_area .new_area_bottom ul {
+    margin: 0;
+    padding: 0;
+}
+
+#technology .area > .new_area .new_area_bottom li {
+    list-style: none;
+    float: left;
+    width: 24%;
+    margin: 0 0.5%;
+}
+
+#technology .area > .new_area .new_area_bottom .bottom_thum {
+    line-height: 0;
+}
+
+#technology .area > .new_area .new_area_bottom .bottom_thum img {
+    width: 100%;
+}
+
+#technology .area > .new_area .new_area_bottom .bottom_info {
+    background-color: #e3e3e3;
+    font-family: 'NanumSquare', sans-serif;
+    color: #555555;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#technology .area > .new_area .new_area_bottom:after {
+    content: "";
+    display: block;
+    clear: both;
+    /* height:0; visibility:hidden; */
+}
+
+#technology .area > .new_area > p {
+    margin: 15px 1.4% 0;
+    font-family: 'NanumSquare', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@media all and (max-width:1200px) { 
+    #technology {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+@media all and (max-width:994px) {
+    #technology .area > .thum img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:960px) {
+    #container #sub_spot_en {
+        margin-top: 85px;
+    }
+}
+
+@media all and (max-width:767px) {
+    #container #sub_spot {
+        height: 200px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 85px;
+        height: 200px;
+    }
+
+    #container .inner .outer {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width:768px) {
+    #technology .area > .ref .thum_text {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    #technology .area > .ref .thum_text li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    #technology .area > .ref .thum_text:after {
+        content: "";
+        display: block;
+        clear: both;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width:640px) {
+    #container #sub_spot {
+        margin-top: 72px;
+    }
+
+    #container #sub_spot_en {
+        margin-top: 68px;
+    }
+
+    #header_sub > .head_inner .main_logo {
+        width: 71px;
+    }
+
+    #header_sub > .head_inner {
+        padding: 25px 25px;
+    }
+
+    #header_sub > .head_inner .gnb_btn img {
+        width: 30px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #technology .area > h2 {
+        margin: 50px auto 0;
+        font-size: 21px;
+        line-height: 34px;
+        letter-spacing: -1px;
+    }
+
+    #technology .area > h2 strong {
+        font-size: 21px;
+        line-height: 34px;
+        letter-spacing: -2px;
+    }
+
+    #technology .area > .tab li {
+        font-size: 15px;
+        line-height: 44px;
+        letter-spacing: -1px;
+    }
+
+    #technology .area > h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #technology .area > .text_thum01 .subject {
+        display: block;
+        width: auto;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    #technology .area > .text_thum01 .p_info {
+        display: block;
+        width: auto;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #technology .area > .ref {
+        margin: 10px 0 0 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #technology .area > .ref .thum_text li {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #technology .area > .new_area {
+        margin: 20px 0 0;
+        padding: 20px 10px;
+    }
+
+    #technology .area > .new_area .new_area_head .head_thum img {
+        width: 100%;
+    }
+
+    #technology .area > .new_area .new_area_head .head_info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #technology .area > .new_area .new_area_bottom {
+        margin: 20px 0 0;
+    }
+
+    #technology .area > .new_area .new_area_bottom li {
+        width: 49%;
+        margin: 0 0.5% 10px;
+    }
+
+    #technology .area > .new_area > p {
+        margin: 10px 0 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #technology .area > .option_text {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+    }
+
+    #technology .area > .ref.v1 {
+        margin: 30px 0 100px 0;
+    }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/information.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"> 
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/review.js"></script>
+    <script src="../../js/motion.js"></script>
+    <title>Process</title>
+</head>
+<body>
+    <script>
+        /* 테크놀러지 메뉴 클릭시 실행 */
+        function technologyMove(tab) {
+            if(location.pathname != '/soonsoofill/page/en/technology.html') {
+                location.href = '/soonsoofill/page/en/technology.html?tab='+tab;
+            } else {
+                if($("#"+tab).length == 0) {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 500);
+                } else {
+                    $("html, body").animate({
+                        scrollTop: $("#"+tab).offset().top - 70
+                    }, 500);
+                }
+            }
+        }
+    </script>
+        
+    <div id="wrap">
+        <div class="gnb_btn_bg">
+                    
+        </div>
+        <header id="header_sub">
+            <div class="head_inner">
+                <h1>
+                    <a href="../../en/index.html">
+                        <img class="main_logo_en" src="../../images/logo_en.png" alt="Logo" />
+                    </a>
+                </h1>  
+                <div class="gnb_btn">
+                    <img onclick="sideBar.open()" src="../../images/gnb.png" alt="Open" />
+                </div>
+            </div>
+        </header>
+        <aside class="side_bar js-side_bar">
+            <div class="lang">
+                <ul class="lang_list">
+                    <li>
+                        <a href="../../index.html">KOR</a>
+                    </li>
+                    <li>
+                        <a href="../../en/index.html">ENG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_btn_close">
+                <img onclick="sideBar.close()" src="../../images/close.png" alt="Close" />
+            </div>
+
+            <div class="m_menu_wrap">
+                <ul class="m_menu_list">
+                    <li class="">
+                        <div class="m_list_title">
+                            BRAND
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/brand.html">Brand Story</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PROCESS
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/process.html">Standards and Spirit</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/process2.html">The 9 Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            TECHNOLOGY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="javascript:technologyMove('zeep');void(0);">Exquisite Technology</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('downing');void(0);">Exquisite Molding</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('result');void(0);">Clinical Results</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PRODUCT
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/product1.html">SOON SOO FILL 50</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product2.html">SOON SOO FILL 100</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product3.html">SOON SOO FILL 300</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/product4.html">SOON SOO FILL 500</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            INFORMATION
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/information1.html">Basic Information</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/information2.html">Side Effect</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/information3.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            COMMUNITY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../../page/en/community1.html">Notice</a>
+                                </li>
+                                <li class="">
+                                    <a href="../../page/en/community2.html">Q&A</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>               
+        </aside>
+
+        <section id="container">
+            <div id="sub_spot_en">
+                <div class="inner">
+                    <div class="outer">
+                        INFORMATION
+                    </div>
+                </div>
+            </div>            
+            <div id="information2">
+                <ul>
+                    <li>
+                        <div class="subject open">
+                            Some side effects related to blood vessels could be occurred.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info" style="display: block">
+                            Very rarely, when a filler is injected into an artery, the blood vessel can become clogged. Necrosis may occur at sites where blood supply is difficult.<br />
+                            If there is a sudden symptom such as discoloration and pain and multiple small pustules immediately after the procedure on the treatment site, it is safe to visit the hospital<br />
+                            immediately and receive medical treatment after consultation.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            I'm worried about side effects. What kind of side effects could happen?
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Side effects such as necrosis and blindness are very rare. But there are cases where the filler excessively presses the blood vessels or enters the blood vessels and causes side effects.<br />
+                            It is therefore safe for you to be treated by an experienced doctor.<br />
+                            General discomfort after treatment is normally relegated to mild symptoms such as bruising, pain, redness, and swelling, and discomfort can be recover within a few days or you<br />
+                            can take additional medicines.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            Swelling, erythema, bruising, etc. may occur after filler injection.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Although hyaluronic acid filler is safe, swelling, erythema and bruising may occur from various causes.<br />
+                            Damage to blood vessels during procedure can cause bruising. Bruises usually disappear naturally within a week, but if you apply a bruise relief cream(vit-K cream), the bruises<br />
+                            disappear more quickly.<br />
+                            Injected hyaluronic acid in the skin absorbs moisture, which can cause a slight swelling. It is more effective to use an ice pack before and after the treatment.<br />
+                            After filler treatment you can take oral antibiotics, NSAID’s for 3 days to prevent inflammation.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            The treatment site may be painful after the procedure.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Types of pain include pain that penetrates the skin through the needle and pain caused by filler.<br />
+                            The injection site can be anesthetized, and pain relief can be achieved by taking an analgesic such as Tylenol after the procedure.<br />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            After the procedure, itching (allergic reaction) may occur.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Although not common, allergic reactions to fillers can cause erythema and edema.<br />
+                            Or allergic reactions are caused by disinfectants, topical anesthetics and antibiotics. Consult your doctor to determine if you should take the medicine or not.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            The procedure area may be uncomfortable.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Filler is composed of substance similar to hyaluronic acid that exists in the human body.<br />
+                            The filler fills the volume gap and persists in the skin, so you may feel a sense of numbness or discomfort.<br />
+                            If discomfort persists after a certain period of time, please consult your doctor.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            It can be an infection.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            The procedure is performed in an aseptic environment. If the procedure is contaminated or the bacteria enter the procedure site, inflammation often occurs.<br />
+                            If the patient does not manage the site well, may become infected.<br /><br />
+                            When you are infected, the procedure site is reddened, swollen, feverish, and painful.<br />
+                            If this happens, please talk to your doctor. Dissolve the filler or take the medication to improve symptoms quickly.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            Skin color can be changed by discoloration.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            If the skin becomes whiter due to the pressure of the blood vessels caused by the filler. It is a temporary response and can be improved.<br />
+                            If it last long please let your doctor know and then you can take some massage or dissolving a small amount of filler.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            The treatment area looks bluish.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            In some rare cases, a bluish filler may appear to be visible called ‘Tyndall effect’ if the skin color is light, the skin is thin, or the filler is injected into the surface of skin layer.<br />
+                            So it is recommended that you do not overdo it.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject">
+                            Acne can occur.
+                            <div class="dot">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Sometimes acne is caused by damage and clogging of pores.<br>
+                            Avoid procedures for areas with acne or folliculitis.
+                        </div>
+                    </li>
+                </ul>   		
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $("#information2 .subject").click(function(){
+                        if ($(this).hasClass("open") == false) {
+                            $("#information2 .subject").removeClass("open");
+                            $("#information2 .info").slideUp(500);
+                            $(this).addClass("open");
+                            $(this).parent().find(".info").slideDown(500);
+                        }
+                    })
+                });
+            </script>
+        </section>         
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img onclick="window.open('https://www.jetema.com/')" src="../../images/logo_jetema.png" alt="제테마" />
+                </div>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <strong>JETEMA, Co., Ltd.</strong>
+                        </li>
+                        <li>
+                            President <strong>Kim Jaeyoung</strong>
+                        </li>
+                        <li>
+                            Address <strong>1283-4, Gagok-ri, Jijeong-myeon, Wonju-si, Gangwon-do, Republic of Korea</strong>
+                        </li>                        
+                        <li>
+                            Corporate Registration Number <strong>135-86-03665</strong>
+                        </li>
+                        <li>
+                            E-mail <strong>global@jetema.com</strong>
+                        </li>
+                        <li>
+                            Tel <strong>+82-2-572-1331</strong>
+                        </li>
+                        <li>
+                            Fax <strong>+82-2-572-1060</strong>
+                        </li>
+                        <li>
+                            COPYRIGHTⓒ 2017 JETEMA Corp. ALL RIGHTS RESERVED.
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_menu">
+                    <div class="inquiry">
+                        <ul>
+                            <li class="btn-open-modal">
+                                <strong id="modalOpenButton">Privacy Policy</strong>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <strong><a href="../../page/community.html" target="_blank">Community</a></strong>
+                            </li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>   
+        </footer>
+    </div>
+
+    <div id="floating">
+        <ul>
+            <li onclick="window.open('https://welcometojam.com')">
+                <img src="../../images/floating_icon1.png" alt="JAM" style="cursor:pointer; width:60px">
+            </li>
+            <li>
+                <img src="../../images/floating_icon2.png" alt="SNS" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.youtube.com/channel/UCRutyS9CTVKATZ2XEwKgYLQ/featured?app=desktop')" src="../../images/floating_youtube.png" alt="JETEMA Youtube" title="JETEMA Youtube">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.instagram.com/jetema_official/')" src="../../images/floating_insta.png" alt="JETEMA Instagram" title="JETEMA Instagram">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            {$("#floating > ul > li").mouseenter(function() {
+                $(".floating_sub").fadeOut(300);
+                $(this).find(".floating_sub").stop().fadeIn(300);
+            });
+            $("#floating").mouseleave(function() {
+                $(".floating_sub").stop().fadeOut(300);
+            });
+            }
+        });
+    </script>
+
+    <!-- sidebar start -->
+    <script>
+        const sideBar = new SideBar('.js-side_bar', 'right');
+    </script>
+    <!-- sidebar end -->    
+
+    <!-- modal start -->
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <div class="Content_text">
+                <strong>1. 수집하는 개인정보의 항목</strong><br>
+                순수필 홈페이지는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                수집항목 : 성명, 비밀번호, 이메일, 휴대전화번호<br>
+                개인정보 수집방법 : 홈페이지(문의사항)<br><br>
+
+
+                <strong>2. 개인정보의 수집 및 이용목적</strong><br>
+                순수필 홈페이지는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+                불만처리 등 민원처리 , 고지사항 전달 마케팅 및 광고에 활용 신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달<br><br>
+
+
+                <strong>3. 개인정보의 보유 및 이용기간</strong><br>
+                순수필 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br>
+            </div>            
+            <div id="modalCloseButton">
+                <img src="../../images/btn_close.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalOpenButton = document.getElementById('modalOpenButton');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modal = document.getElementById('modalContainer');
+
+        modalOpenButton.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        });
+    </script>
+    <!-- modal end -->
+
+    <script>
+        $(document).ready(function () {
+            $(".m_list_title").click(function () {
+                if ($(this).hasClass("active")) {
+                    slideUp();
+                } else {
+                    slideUp();
+                    $(this).addClass("active").next().slideDown();
+                }
+                    function slideUp() {
+                    $(".m_list_title").removeClass("active").next().slideUp();
+                }
+            });
+        });  
+    </script>
+</body>
+</html>

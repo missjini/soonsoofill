@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/community.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"> 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/review.js"></script>
+    <title>Community</title>
+</head>
+<body>
+    <script>
+        /* 테크놀러지 메뉴 클릭시 실행 */
+        function technologyMove(tab) {
+            if(location.pathname != '/soonsoofill/page/technology.html') {
+                location.href = '/soonsoofill/page/technology.html?tab='+tab;
+            } else {
+                if($("#"+tab).length == 0) {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 500);
+                } else {
+                    $("html, body").animate({
+                        scrollTop: $("#"+tab).offset().top - 70
+                    }, 500);
+                }
+            }
+        }
+    </script>
+        
+    <div id="wrap">
+        <div class="gnb_btn_bg">
+                    
+        </div>
+        <header id="header_sub">
+            <div class="head_inner">
+                <h1>
+                    <a href="../index.html">
+                        <img class="main_logo" src="../images/logo.png" alt="Logo" />
+                    </a>
+                </h1>  
+                <div class="gnb_btn">
+                    <img onclick="sideBar.open()" src="../images/gnb.png" alt="Open" />
+                </div>
+            </div>
+        </header>
+        <aside class="side_bar js-side_bar">
+            <div class="lang">
+                <ul class="lang_list">
+                    <li>
+                        <a href="../images/">KOR</a>
+                    </li>
+                    <li>
+                        <a href="../en/index.html">ENG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_btn_close">
+                <img onclick="sideBar.close()" src="../images/close.png" alt="Close" />
+            </div>
+
+            <div class="m_menu_wrap">
+                <ul class="m_menu_list">
+                    <li class="">
+                        <div class="m_list_title">
+                            BRAND
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/brand.html">브랜드 이야기</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PROCESS
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/process.html">기준 및 정신</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/process2.html">The 9 Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            TECHNOLOGY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="javascript:technologyMove('zeep');void(0);">정교한 기술력</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('downing');void(0);">안전한 가교 기술</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('result');void(0);">임상결과</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PRODUCT
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/product1.html">순수필 50</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product2.html">순수필 100</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product3.html">순수필 300</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product4.html">순수필 500</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            INFORMATION
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/information1.html">필러 일반상식</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/information2.html">필러 부작용</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/information3.html">자주하는 질문</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            COMMUNITY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/community1.html">공지사항</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/community2.html">문의사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>               
+        </aside>
+
+        <section id="container">
+            <div id="sub_spot">
+                <div class="inner">
+                    <div class="outer">
+                        COMMUNITY
+                    </div>
+                </div>
+            </div>
+            <div id="community">
+                <form name="search_form" id="search_form" method="" onsubmit="">
+                    <div class="search resp">
+                        <ul class="option">
+                            <li class="select" style="display:none;">
+                                <select id="category_numbers" name="" onchange="">
+                                    <option value="">분류</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul class="search">
+                            <li class="select">
+                                <select id="page_option" name="page_option">
+                                    <option value="" selected="">선택</option>
+                                    <option value="1">제목</option>
+                                    <option value="2">내용</option>
+                                    <option value="4">작성자</option>
+                                </select>
+                            </li>
+                            <li class="input">
+                                <input type="text" name="page_keyword" id="page_keyword" value="" placeholder="검색어를 입력해주세요.">
+                
+                                <span class="btn search_form_submit">
+                                    <input type="image" src="../images/community/search.png" value="검색">
+                                </span>
+                            </li>
+                            <div style="clear:both"></div>
+                        </ul>
+                    </div>
+                </form>
+                <div class="list resp">
+                    <ul class="list_head number">
+                        <li>
+                            <div class="th col_no">번호</div>
+                            <div class="th col_subject">제목</div>
+                            <div class="th col_name">작성자</div>
+                            <div class="th col_date">등록일</div>
+                            <div class="th col_hit">조회</div>
+                        </li>
+                    </ul>
+                    <div class="list_body">
+                        <ul>
+                            <li class="notice">
+                                <div class="td col_no">
+                                    공지
+                                </div>
+                                <div class="td col_subject">
+                                    <p>
+                                        <a href="#">
+                                            <span class="subject_area">
+                                                제테마 내부고발 제도 규정
+                                            </span>
+                                        </a>
+                                        <img class="sct" src="../images/community/icon_file.gif">
+                                    </p>
+                                </div>
+                                <div class="td col_name">
+                                    관리자
+                                </div>
+                                <div class="td col_date">
+                                    22.12.07
+                                </div>
+                                <div class="td col_hit">
+                                    99
+                                </div>
+                            </li>
+                            <li class="notice">
+                                <div class="td col_no">
+                                    공지
+                                </div>
+                                <div class="td col_subject">
+                                    <p>
+                                        <a href="#">
+                                            <span class="subject_area">
+                                                제테마 윤리경영 규범
+                                            </span>
+                                        </a>
+                                        <img class="sct" src="../images/community/icon_file.gif">
+                                    </p>
+                                </div>
+                                <div class="td col_name">
+                                    관리자
+                                </div>
+                                <div class="td col_date">
+                                    22.11.09
+                                </div>
+                                <div class="td col_hit">
+                                    45
+                                </div>
+                            </li>
+                            <li class="notice">
+                                <div class="td col_no">
+                                    공지
+                                </div>
+                                <div class="td col_subject">
+                                    <p>
+                                        <a href="#">
+                                            <span class="subject_area" style="color: #0000ff;">
+                                                [병의원 공급처] 에피티크 바이덤 인텐시브 크림 엠디
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="td col_name">
+                                    관리자
+                                </div>
+                                <div class="td col_date">
+                                    23.10.27
+                                </div>
+                                <div class="td col_hit">
+                                    80
+                                </div>
+                            </li>                                                
+                        </ul>
+                    </div>
+                </div> 
+                <div class="list thum resp">
+                    <div class="list_body">
+                        <ul>
+                            <li class="notice mo">
+                                <div class="td col_no">
+                                    4
+                                </div>
+                                <div class="td col_thum">
+                                    <img src="../images/community/banner1.jpg" alt="" />
+                                </div>
+                                <div class="td text">
+                                    <div class="col_thum_subject">
+                                        <span>
+                                            제테마, 제 9회 글로벌 학술 심포지엄 'Jetema Academic Meeting' 성료
+                                        </span>
+                                        <img src="">
+                                    </div>
+                                    <div class="col_thum_text">
+                                        제테마가 지난 11일 글로벌 학술 심포지엄 ‘Jetema Academic Meeting(제테마 아카데믹 미팅, 이하 JAM)’ 웨비나를 성공적으로 마쳤다고 13일 밝혔다.
+                                        이번 9회차 JAM에서는 미용성형분야의 최신 트렌드를 비롯해 미용, 성형 시술과 관련한 해부학 정보 및 다양한 제테마 미용,성형 제품을 활용한 시술법에 대해서 국내외 의료인들이 참여해 정보를 전달하고 공유했다.
+                                        봄여름가을겨울 피부과 강승훈 대표원장(피부과 전문...
+                                    </div>
+                                    <div class="col_thum_etc">
+                                        작성일 :
+                                        2023-10-14
+                                        /
+                                        조회수 : 98
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notice mo">
+                                <div class="td col_no">
+                                    3
+                                </div>
+                                <div class="td col_thum">
+                                    <img src="../images/community/banner2.jpg" alt="" />
+                                </div>
+                                <div class="td text">
+                                    <div class="col_thum_subject">
+                                        <span>
+                                            제테마, 제 8회 글로벌 학술 심포지엄 'Jetema Academic Meeting' 성료
+                                        </span>
+                                        <img src="">
+                                    </div>
+                                    <div class="col_thum_text">
+                                        제테마가 글로벌 학술 심포지엄 Jetema Academic Meeting(제테마 아카데믹 미팅, 이하 JAM) 제8회 웨비나를 성공적으로 마쳤다.
+                                        JAM은 매회 전세계 40여개 국가에서 1000여명 이상의 미용·성형 분야의 의료인들이 실시간으로 참석해 강연을 듣고 실시간 채팅을 통해 Q&amp;A를 운영하며 활발한 양방향 소통을 이어 나가고 있다.
+                                        이번 제8회 JAM은 미용성형 학계를 대표하는 연자들(이화여자대학교 의과대학 한승호 교수, 브라질 피부과...
+                                    </div>
+                                    <div class="col_thum_etc">
+                                        작성일 :
+                                        2023-09-05
+                                        /
+                                        조회수 : 84
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notice mo">
+                                <div class="td col_no">
+                                    2
+                                </div>
+                                <div class="td col_thum">
+                                    <img src="../images/community/banner3.jpg" alt="" />
+                                </div>
+                                <div class="td text">
+                                    <div class="col_thum_subject">
+                                        <span>
+                                            제테마, 제7회 글로벌 심포지엄 ‘Jetema Academic Meeting’ 성료
+                                        </span>
+                                        <img src="">
+                                    </div>
+                                    <div class="col_thum_text">
+                                        제테마가 글로벌 학술 심포지엄 Jetema Academic Meeting(제테마 아카데믹 미팅, 이하 JAM) 제7회 웨비나를 성공적으로 마쳤다.
+                                        JAM은 전세계 40여개 국가에서 매회 1000여명 이상의 미용·성형 분야의 의료인들이 실시간으로 참석해 강연을 듣고 Q&amp;A와 채팅을 통해 활발한 양방향 소통을 이어 나가고 있다.
+                                        제7회 JAM의 주제는 ‘The latest discussion about minimally invasive aesthetic procedures’로 뷰티바성형외과의...
+                                    </div>
+                                    <div class="col_thum_etc">
+                                        작성일 :
+                                        2023-07-31
+                                        /
+                                        조회수 : 104
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notice mo">
+                                <div class="td col_no">
+                                    1
+                                </div>
+                                <div class="td col_thum">
+                                    <img src="../images/community/banner4.jpg" alt="" />
+                                </div>
+                                <div class="td text">
+                                    <div class="col_thum_subject">
+                                        <span>
+                                            제테마, 제6회 글로벌 심포지엄 ‘Jetema Academic Meeting’ 성료
+                                        </span>
+                                        <img src="">
+                                    </div>
+                                    <div class="col_thum_text">
+                                        제테마의 대표 학술행사인 JAM(Jetema Academic Meeting)이 지난 29일 제6회차를 맞이했다.
+                                        제6회 JAM의 주제는 ‘The latest discussion about minimally invasive aesthetic procedures’로 글로벌 미용, 성형학계를 대표하는 연자들이 참여해
+                                        미용·성형 시술과 관련한 해부학부터 환자 상태에 따른 시술법, 미용, 성형 시술 트렌드에 따른 시술 접근법 등으로 학술적 교류를 증진하고 소통했다.
+                                        특히 이번 심포지엄에서는 시술 부위별 ...
+                                    </div>
+                                    <div class="col_thum_etc">
+                                        작성일 :
+                                        2023-11-14
+                                        /
+                                        조회수 : 98
+                                    </div>
+                                </div>
+                            </li>                                                                      
+                        </ul>
+                    </div>
+                </div>                 
+                <div id="page_nav" class="pagination">
+                    <p class="first_btn">
+                        &lt;
+                    </p>
+                    <p class="current">1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p class="last_btn">
+                        &gt;
+                    </p>
+                </div>                                 
+            </div>
+        </section>         
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img onclick="window.open('https://www.jetema.com/')" src="../images/logo_jetema.png" alt="제테마" />
+                </div>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <strong>(주)제테마</strong>
+                        </li>
+                        <li>
+                            대표자 <strong>김재영, 남정선</strong>
+                        </li>
+                        <li>
+                            주소 <strong>강원도 원주시 지정면 가곡리 1283-4</strong>
+                        </li>                        
+                        <li>
+                            사업자등록번호 <strong>135-86-03665</strong>
+                        </li>
+                        <li>
+                            이메일 <strong>104000_JTM@jetema.com</strong>
+                        </li>
+                        <li>
+                            전화 <strong>02) 572-1331</strong>
+                        </li>
+                        <li>
+                            팩스 <strong>02) 572-1060</strong>
+                        </li>
+                        <li>
+                            COPYRIGHTⓒ 2017 JETEMA Corp. ALL RIGHTS RESERVED.
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_menu">
+                    <div class="inquiry">
+                        <ul>
+                            <li class="btn-open-modal">
+                                <strong id="modalOpenButton">개인정보취급방침</strong>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <strong><a href="../page/community.html" target="_blank">고객문의</a></strong>
+                            </li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>   
+        </footer>
+    </div>
+
+    <div id="floating">
+        <ul>
+            <li onclick="window.open('https://welcometojam.com')">
+                <img src="../images/floating_icon1.png" alt="JAM" style="cursor:pointer; width:60px">
+            </li>
+            <li>
+                <img src="../images/floating_icon2.png" alt="SNS" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.youtube.com/channel/UCRutyS9CTVKATZ2XEwKgYLQ/featured?app=desktop')" src="../images/floating_youtube.png" alt="JETEMA Youtube" title="JETEMA Youtube">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.instagram.com/jetema_official/')" src="../images/floating_insta.png" alt="JETEMA Instagram" title="JETEMA Instagram">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="../images/floating_icon3.png" alt="SHOP" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none; opacity: 1;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://jtmall.kr')" src="../images/floating_jetema.png" alt="의료인 전용몰" title="의료인 전용몰">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://smartstore.naver.com/aestheticlaboratory/category/1ee485ad1ff5422093b059fc7f1a42d6?cp=1')" src="../images/floating_naver.png" alt="소비자 전용몰" title="소비자 전용몰">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="window.open('https://www.jetema.com/board/view/customer01/263')">
+                <img src="../images/floating_icon4.png" alt="병원찾기" style="cursor:pointer; width:60px">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            {$("#floating > ul > li").mouseenter(function() {
+                $(".floating_sub").fadeOut(300);
+                $(this).find(".floating_sub").stop().fadeIn(300);
+            });
+            $("#floating").mouseleave(function() {
+                $(".floating_sub").stop().fadeOut(300);
+            });
+            }
+        });
+    </script>
+
+    <!-- sidebar start -->
+    <script>
+        const sideBar = new SideBar('.js-side_bar', 'right');
+    </script>
+    <!-- sidebar end -->    
+
+    <!-- modal start -->
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <div class="Content_text">
+                <strong>1. 수집하는 개인정보의 항목</strong><br>
+                순수필 홈페이지는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                수집항목 : 성명, 비밀번호, 이메일, 휴대전화번호<br>
+                개인정보 수집방법 : 홈페이지(문의사항)<br><br>
+
+
+                <strong>2. 개인정보의 수집 및 이용목적</strong><br>
+                순수필 홈페이지는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+                불만처리 등 민원처리 , 고지사항 전달 마케팅 및 광고에 활용 신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달<br><br>
+
+
+                <strong>3. 개인정보의 보유 및 이용기간</strong><br>
+                순수필 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br>
+            </div>            
+            <div id="modalCloseButton">
+                <img src="../images/btn_close.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalOpenButton = document.getElementById('modalOpenButton');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modal = document.getElementById('modalContainer');
+
+        modalOpenButton.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        });
+    </script>
+    <!-- modal end -->
+
+    <script>
+        $(document).ready(function () {
+            $(".m_list_title").click(function () {
+                if ($(this).hasClass("active")) {
+                    slideUp();
+                } else {
+                    slideUp();
+                    $(this).addClass("active").next().slideDown();
+                }
+                    function slideUp() {
+                    $(".m_list_title").removeClass("active").next().slideUp();
+                }
+            });
+        });  
+    </script>
+</body>
+</html>

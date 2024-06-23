@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/information.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"> 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/review.js"></script>
+    <script src="../js/motion.js"></script>
+    <title>Process</title>
+</head>
+<body>
+    <script>
+        /* 테크놀러지 메뉴 클릭시 실행 */
+        function technologyMove(tab) {
+            if(location.pathname != '/soonsoofill/page/technology.html') {
+                location.href = '/soonsoofill/page/technology.html?tab='+tab;
+            } else {
+                if($("#"+tab).length == 0) {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 500);
+                } else {
+                    $("html, body").animate({
+                        scrollTop: $("#"+tab).offset().top - 70
+                    }, 500);
+                }
+            }
+        }
+    </script>
+        
+    <div id="wrap">
+        <div class="gnb_btn_bg">
+                    
+        </div>
+        <header id="header_sub">
+            <div class="head_inner">
+                <h1>
+                    <a href="../index.html">
+                        <img class="main_logo" src="../images/logo.png" alt="Logo" />
+                    </a>
+                </h1>  
+                <div class="gnb_btn">
+                    <img onclick="sideBar.open()" src="../images/gnb.png" alt="Open" />
+                </div>
+            </div>
+        </header>
+        <aside class="side_bar js-side_bar">
+            <div class="lang">
+                <ul class="lang_list">
+                    <li>
+                        <a href="../images/">KOR</a>
+                    </li>
+                    <li>
+                        <a href="../en/index.html">ENG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb_btn_close">
+                <img onclick="sideBar.close()" src="../images/close.png" alt="Close" />
+            </div>
+
+            <div class="m_menu_wrap">
+                <ul class="m_menu_list">
+                    <li class="">
+                        <div class="m_list_title">
+                            BRAND
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/brand.html">브랜드 이야기</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PROCESS
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/process.html">기준 및 정신</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/process2.html">The 9 Process</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            TECHNOLOGY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="javascript:technologyMove('zeep');void(0);">정교한 기술력</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('downing');void(0);">안전한 가교 기술</a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:technologyMove('result');void(0);">임상결과</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            PRODUCT
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/product1.html">순수필 50</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product2.html">순수필 100</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product3.html">순수필 300</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/product4.html">순수필 500</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            INFORMATION
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/information1.html">필러 일반상식</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/information2.html">필러 부작용</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/information3.html">자주하는 질문</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="m_list_title">
+                            COMMUNITY
+                        </div>
+            
+                        <div class="m_sub_list">
+                            <ul>
+                                <li class="">
+                                    <a href="../page/community1.html">공지사항</a>
+                                </li>
+                                <li class="">
+                                    <a href="../page/community2.html">문의사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>               
+        </aside>
+
+        <section id="container">
+            <div id="sub_spot">
+                <div class="inner">
+                    <div class="outer">
+                        INFORMATION
+                    </div>
+                </div>
+            </div>            
+            <div id="information2">
+                <ul>
+                    <li>
+                    <div class="subject open">필러 시술 시 어떠한 효과를 얻을 수 있나요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info" style="display: block;">필러는 이름처럼 ‘filler, 채우는’ 역할을 합니다. 주름을 개선하고 꺼진 부위에 볼륨을 줍니다.</div>
+                    </li>
+                    <li>
+                    <div class="subject">필러 시술 전 후 안전한가요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info">에피티크는 국내 식품의약품안전처의 허가와 국내대학의 임상을 통해서도 안전성을 확인 받았습니다.<br>
+                    대표 성분은 우리 몸 안에도 존재하는 히알루론산의 유사 성분이며, 녹이는 주사가 있어 부작용이 발생하거나 모양이 마음에 안 들 경우 녹일 수 있어 안심하셔도 좋습니다.<br>
+                    히알루론산 필러는 체내에서 가수분해되어 안전합니다.</div>
+                    </li>
+                    <li>
+                    <div class="subject">바늘이 아플 것 같은데 어느 정도의 고통이 있나요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info">시술 전 마취크림을 이용해 피부를 마취 할 수 있고, 마취주사가 진행 될 경우 처음의 따끔함만 참으시면 시술은 오히려 큰 통증 없이 진행됩니다.<br>
+                    마취로 인해 바늘이 지나가는 느낌, 필러가 채워지는 느낌 정도만 느껴집니다.</div>
+                    </li>
+                    <li>
+                    <div class="subject">추가 필러 시술과 수술은 언제 받을 수 있나요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info">필러 유지기간은 개인차가 있어 볼륨이 부족하다고 느껴지실 때, 같은 성분의 히알루론산 필러(녹는 필러)에 한해, 그리고 피부 내 필러를 넣을 여유공간이 있다면 추가 시술이 가능합니다.<br>
+                    필러를 주입한 부위에 수술을 결정하셨다면, 피부 내 남은 필러가 없어야 합니다.<br>
+                    남아있는 필러가 있다면 녹이는 주사로 녹인 후 수술을 하시는 것이 안전합니다.</div>
+                    </li>
+                    <li>
+                    <div class="subject">시술 후 주의할 점은 무엇인가요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info">- 월경 중이거나 몸 컨디션이 좋지 않을 때는 가급적 시술을 피해주십시오.<br>
+                    - 시술 당일 음주와 흡연은 피해주시고, 편히 휴식을 취해 주십시오.<br>
+                    - 가벼운 세안과 화장은 시술 당일 가능합니다.<br>
+                    - 시술 전 진통소염제·아스피린 계열의 약물 복용과 비타민·홍삼·와인 섭취를 피하시면 멍 발생을 줄일 수 있습니다.<br>
+                    - 멍은 보통 자연적으로 일주일 내 사라지나, 멍크림을 발라주시면 더 빨리 멍이 사라집니다.<br>
+                    - 염증 발생 방지를 위해 강렬한 자외선에 노출 및 뜨거운 한증막 출입은 시술 후 약 2주정도 피해주십시오.<br>
+                    - 시술 부위가 붓거나, 통증, 열감이 심할 경우 개인에 따른 거부반응 및 염증 반응일 수 있으므로 시술 받은 병원에서 치료 조치를 받아 주십시오.<br>
+                    - 시술 후 필러가 자리잡는 1달까지 시술 부위를 과도하게 만지지 마십시오.</div>
+                    </li>
+                    <li>
+                    <div class="subject">부작용 대응방법은 무엇인가요?
+                    <div class="dot"><span class="icon1"></span> <span class="icon2"></span></div>
+                    </div>
+                
+                    <div class="info">- 부기 : 시술 전후 아이스 팩을 활용하면 좀 더 효과적입니다.<br>
+                    - 멍 : 보통 일주일내 사라지나, 시술 후 비타민 K 멍크림을 발라주면 좀 더 빨리 사라집니다.<br>
+                    - 통증 : 시술 전 리도카인 마취크림 및 국소마취제 주사가 가능하며 시술 후 타이레놀 등의 진통제를 통해 통증을 줄일 수 있습니다.<br>
+                    - 간지러움 : 급성 알레르기 반응으로, 스테로이드 및 항히스타민제를 정맥주사 또는 경구제 복용하여 호전됩니다.<br>
+                    - 변색 : 필러에 의한 혈관 압박으로 피부가 하얗게 변한 경우, 마사지 혹은 소량의 필러 제거로 호전이 가능합니다.<br>
+                    - 틴들현상 : 다크서클 부위에 시술 시 푸르스름하게 필러가 비쳐보이는 현상으로 피부색이 밝거나 피부가 얇은 경우, 그리고 필러가 너무 얕은 피부층에 주입된 경우 드물게 발생할 수 있습니다.<br>
+                    - 여드름 : 필러로 인한 모공 손상 및 막힘으로 발생됩니다. 여드름이나 모낭염 있는 부위는 시술을 피해 주십시오. 여드름 발생 시, 일반적 여드름 치료 진행으로 개선 가능합니다.</div>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $("#information2 .subject").click(function(){
+                        if ($(this).hasClass("open") == false) {
+                            $("#information2 .subject").removeClass("open");
+                            $("#information2 .info").slideUp(500);
+                            $(this).addClass("open");
+                            $(this).parent().find(".info").slideDown(500);
+                        }
+                    })
+                });
+            </script>
+        </section>         
+
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img onclick="window.open('https://www.jetema.com/')" src="../images/logo_jetema.png" alt="제테마" />
+                </div>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <strong>(주)제테마</strong>
+                        </li>
+                        <li>
+                            대표자 <strong>김재영, 남정선</strong>
+                        </li>
+                        <li>
+                            주소 <strong>강원도 원주시 지정면 가곡리 1283-4</strong>
+                        </li>                        
+                        <li>
+                            사업자등록번호 <strong>135-86-03665</strong>
+                        </li>
+                        <li>
+                            이메일 <strong>104000_JTM@jetema.com</strong>
+                        </li>
+                        <li>
+                            전화 <strong>02) 572-1331</strong>
+                        </li>
+                        <li>
+                            팩스 <strong>02) 572-1060</strong>
+                        </li>
+                        <li>
+                            COPYRIGHTⓒ 2017 JETEMA Corp. ALL RIGHTS RESERVED.
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_menu">
+                    <div class="inquiry">
+                        <ul>
+                            <li class="btn-open-modal">
+                                <strong id="modalOpenButton">개인정보취급방침</strong>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <strong><a href="../page/community.html" target="_blank">고객문의</a></strong>
+                            </li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>   
+        </footer>
+    </div>
+
+    <div id="floating">
+        <ul>
+            <li onclick="window.open('https://welcometojam.com')">
+                <img src="../images/floating_icon1.png" alt="JAM" style="cursor:pointer; width:60px">
+            </li>
+            <li>
+                <img src="../images/floating_icon2.png" alt="SNS" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.youtube.com/channel/UCRutyS9CTVKATZ2XEwKgYLQ/featured?app=desktop')" src="../images/floating_youtube.png" alt="JETEMA Youtube" title="JETEMA Youtube">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://www.instagram.com/jetema_official/')" src="../images/floating_insta.png" alt="JETEMA Instagram" title="JETEMA Instagram">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="../images/floating_icon3.png" alt="SHOP" style="cursor:pointer; width:60px">
+    
+                <div class="floating_sub" style="display: none; opacity: 1;">
+                    <ul>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://jtmall.kr')" src="../images/floating_jetema.png" alt="의료인 전용몰" title="의료인 전용몰">
+                        </li>
+                        <li style="cursor:pointer">
+                            <img onclick="window.open('https://smartstore.naver.com/aestheticlaboratory/category/1ee485ad1ff5422093b059fc7f1a42d6?cp=1')" src="../images/floating_naver.png" alt="소비자 전용몰" title="소비자 전용몰">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="window.open('https://www.jetema.com/board/view/customer01/263')">
+                <img src="../images/floating_icon4.png" alt="병원찾기" style="cursor:pointer; width:60px">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            {$("#floating > ul > li").mouseenter(function() {
+                $(".floating_sub").fadeOut(300);
+                $(this).find(".floating_sub").stop().fadeIn(300);
+            });
+            $("#floating").mouseleave(function() {
+                $(".floating_sub").stop().fadeOut(300);
+            });
+            }
+        });
+    </script>
+
+    <!-- sidebar start -->
+    <script>
+        const sideBar = new SideBar('.js-side_bar', 'right');
+    </script>
+    <!-- sidebar end -->    
+
+    <!-- modal start -->
+    <div id="modalContainer" class="hidden">
+        <div id="modalContent">
+            <div class="Content_text">
+                <strong>1. 수집하는 개인정보의 항목</strong><br>
+                순수필 홈페이지는 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                수집항목 : 성명, 비밀번호, 이메일, 휴대전화번호<br>
+                개인정보 수집방법 : 홈페이지(문의사항)<br><br>
+
+
+                <strong>2. 개인정보의 수집 및 이용목적</strong><br>
+                순수필 홈페이지는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+                불만처리 등 민원처리 , 고지사항 전달 마케팅 및 광고에 활용 신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달<br><br>
+
+
+                <strong>3. 개인정보의 보유 및 이용기간</strong><br>
+                순수필 홈페이지는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br>
+            </div>            
+            <div id="modalCloseButton">
+                <img src="../images/btn_close.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalOpenButton = document.getElementById('modalOpenButton');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modal = document.getElementById('modalContainer');
+
+        modalOpenButton.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        });
+    </script>
+    <!-- modal end -->
+
+    <script>
+        $(document).ready(function () {
+            $(".m_list_title").click(function () {
+                if ($(this).hasClass("active")) {
+                    slideUp();
+                } else {
+                    slideUp();
+                    $(this).addClass("active").next().slideDown();
+                }
+                    function slideUp() {
+                    $(".m_list_title").removeClass("active").next().slideUp();
+                }
+            });
+        });  
+    </script>
+</body>
+</html>
